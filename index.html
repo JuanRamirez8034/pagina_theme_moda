@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop to the world</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="cont-main">
+        <div class="menu">
+            <a href="#"> <img src="img/Iconos/logo.png" alt="logo"> </a>
+            <span onclick="abrir_menu(this)" id="abrCrr">☰</span>
+        </div>
+        <header id="menuCont">
+            <nav>
+                <a href="#" class="ajuste"><img src="img/Iconos/logo.png" alt=""></a>
+                <ul>
+                    <li><a  href="#exitos">Exitos</a></li>
+                    <li><a  href="#gallery">Galeria</a></li>
+                    <li><a  href="#historia">Historia</a></li>
+                    <li><a  href="#inicio">Inicio</a></li>
+                    <li class="oculto"><a onclick="cerrar_menu()">Cerrar</a></li>                  
+                </ul>
+            </nav>
+        </header>
+        <!--Seccion foto de bienvenida-->
+        <div class="cont-ftb" id="inicio">
+            <a href="#historia"><img src="img/Iconos/dark-arrow.svg" alt=""></a>
+            <img src="img/Iconos/logo.png" alt="" class="logo">
+        </div>
+        <!--Contenedor Historia-->
+        <div class="cont-hist" id="historia">
+            <div class="col-row">
+                <div>
+                    <h3>Origenes</h3>
+                    <p>
+                        La música pop (del <span>“inglés”</span> pop music) tuvo su origen a finales de los años 1950 como una derivación del 
+                        <span>“Traditional Pop”</span>, en combinación con otros géneros musicales que estaban de moda en aquel momento. Los 
+                        términos música pop y música popular se usan a menudo de manera indistinta, aunque el segundo tiene un 
+                        sentido más amplio al dar cabida a otros géneros distintos del pop que se consideren populares.
+                        Como género, la música pop es muy ecléctica, tomando prestado a menudo elementos de otros estilos como el 
+                        <span>“urban”</span>, el <span>“dance”</span>, el <span>“rock”</span>, la <span>“música latina”</span>, el <span>“rhythm and blues”</span> 
+                        o el folk. Con todo, hay elementos esenciales que definen al pop, como son las canciones de corta a media duración, escritas en un formato básico 
+                        (a menudo la estructura <span>“estrofa-estribillo”</span>), así como el uso habitual de estribillos repetidos, de temas 
+                        melódicos y <span>“ganchos”</span>. La instrumentación se compone habitualmente de guitarra, batería, bajo, guitarra 
+                        eléctrica, teclado, sintetizador, etc. 
+                    </p>
+                </div>
+                <div>
+                    <img src="img/origenpop.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-row">
+                <div>
+                    <img src="img/generodistinto.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Un género distinto</h3>
+                    <p>
+                        El término canción pop se registró por primera vez en 1926, usado en el sentido de una pieza musical 
+                        «que tenga atractivo popular». A partir de la década de 1990, el término «música pop» se ha utilizado 
+                        para describir un género distinto, destinado a un mercado joven, a menudo caracterizado como una 
+                        alternativa suave al <span>“rock and roll”</span>. Según T. Warner, «a raíz del auge de los artistas británicos 
+                        de la conocida como <span>“invasión británica”</span>, alrededor de 1967, el término fue utilizado cada vez más 
+                        en oposición al concepto de <span>“música rock”</span>, para describir una forma musical más comercial, efímera y accesible».
+                    </p>
+                    <p>
+                        Aunque la música pop es a menudo vista como orientada a las listas de ventas de <span>“sencillos”</span>, 
+                        como género no consiste simplemente en la suma de todos los éxitos musicales, que ha contenido 
+                        siempre canciones procedentes de una variedad de fuentes, entre ellas la <span>“música clásica”</span>, el 
+                        jazz o el rock, sino que configura un género con una existencia y desarrollo separados. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--seccion de galeria-->
+        <div id="gallery">
+            <!--separador de seccionnes-->
+            <div class="separador" style="background-color: rgb(150, 145, 145);"></div>
+            <h2>Artistas reconocidos</h2>
+            <!--filas de contenedor de imagnes (galeria)-->
+            <div class="cont-flex-imagenes-filas">
+                <!--Columna de imagenes-->
+                <div class="cont-imagen-columna">
+                    <div class="cont-imagen-description">
+                            <img src="img/Michael_Jackson.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Michael Joseph Jackson​ fue un cantante, compositor, productor discográfico, bailarín, actor y filántropo estadounidense.​​​</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/katheryn_elizabeth_hudson.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Katheryn Elizabeth Hudson, más conocida por su nombre artístico Katy Perry</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/adele.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Adele Laurie Blue Adkins, conocida simplemente como Adele</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/rihanna.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Robyn Rihanna Fenty, conocida simplemente como Rihanna</p>
+                    </div>
+                </div>
+                <!--Columna de imagenes-->
+                <div class="cont-imagen-columna">
+                    <div class="cont-imagen-description">
+                            <img src="img/edSheran.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Edward Christopher Sheeran, más conocido como Ed Sheeran</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/arianagrande.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Ariana Grande Butera ​ es una cantante, compositora, actriz, productora musical y diseñadora de modas estadounidense.​</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/taylorswift.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Taylor Alison Swift es una cantante, compositora, productora, filántropa y actriz estadounidense.</p>
+                    </div>
+                </div>
+                <!--Columna de imagenes-->
+                <div class="cont-imagen-columna">
+                    <div class="cont-imagen-description">
+                            <img src="img/beyonce.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Beyoncé Giselle Knowles-Carter, ​​ conocida simplemente como Beyoncé, es 
+                                una cantante, compositora, actriz, modelo, diseñadora de moda, filántropa 
+                                y empresaria estadounidense.</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/ladygaga.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Stefani Joanne Angelina Germanotta, más conocida por su nombre 
+                                artístico Lady Gaga, es una cantante, compositora, productora, bailarina, 
+                                actriz, activista y diseñadora de moda estadounidense.​</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/shakira.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Shakira Isabel Mebarak Ripoll, conocida artísticamente como Shakira, 
+                                es una cantautora, bailarina, actriz, empresaria, embajadora de buena 
+                                voluntad de UNICEF y filántropa colombiana.</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/christinaAguilera.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Christina María Aguilera es una cantante, compositora, actriz, 
+                                modelo, diseñadora de modas, productora y empresaria estadounidense.</p>
+                    </div>
+                </div>
+                <!--Columna de imagenes-->
+                <div class="cont-imagen-columna">
+                    <div class="cont-imagen-description">
+                            <img src="img/brunimars.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Peter Gene Hernandez, conocido artísticamente como Bruno Mars, 
+                                es un cantante, compositor, productor musical y bailarín estadounidense.</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/dualipa.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Dua Lipa es una cantante y compositora británica de etnia albanokosovar. 
+                                Después de trabajar como modelo, firmó con Warner Bros. Records en 2014 y 
+                                lanzó su álbum debut homónimo en 2017.</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/mileycyrus.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Miley Ray Cyrus es una cantante, compositora, actriz y 
+                                productora de discos estadounidense. Destacada por su voz ronca, ​​ 
+                                su música abarca una gama de estilos, desde pop y country pop 
+                                hasta hip hop, experimental y rock.</p>
+                    </div>
+                    <div class="cont-imagen-description">
+                            <img src="img/samsmith.jpg" alt="img" onclick="vista_p(this)">
+                            <p>Samuel Frederick Smith, cuyo nombre artístico es Sam Smith, 
+                                es una persona no binaria del Reino Unido cantante y profesional 
+                                de la composición.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="cont-visualizar-imagen" id="ventanaImagen">
+                <img id="verImg" alt="">
+                <span onclick="cerrar_vista_p()">x</span>
+            </div>
+        </div>
+        <!--Seccion Exitos-->
+        <div class="exitos" id="exitos">
+            <!--separador de seccionnes-->
+            <div class="separador" style="background: darkcyan;"></div>
+            <div class="cont-exitos">
+                <h2>Recomendados</h2>
+                <div class="cont-flex-exitos">
+                    <!--Exito mas somebody-->
+                    <div class="tarjeta-video">
+                        <img src="img/somebody.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=8UVNT4wvIGY">Somebody that i used to know</a> <br>De <span>Gotye</span> junto a <span>Kimbra</span> lanzada en 2011.</p>
+                        </div>
+                    </div>
+                    <!--Exito mas wanna be startin-->
+                    <div class="tarjeta-video">
+                        <img src="img/wannabestartin.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=1XMvPTFzgVU">Wanna Be Startin' Somethin'</a> <br><span>De Michael Jackson</span> lanzada en 1989.</p>
+                        </div>
+                    </div>
+                    <!--Exito mas make you feel my love-->
+                    <div class="tarjeta-video">
+                        <img src="img/makeyoufeel.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=0put0_a--Ng">Make You Feel My Love</a><br> De <span>ADELE</span> lanzada oficialmente en 2008.</p>
+                        </div>
+                    </div>
+                    <!--Exito mas-->
+                    <div class="tarjeta-video">
+                        <img src="img/girllikeme.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=vMLk_T0PPbk">GIRL LIKE ME</a><br>De <span>Black Eyed Peas </span> y <span>Shakira</span> lanzada en 2020.</p>
+                        </div>
+                    </div>
+                    <!--Exito mas-->
+                    <div class="tarjeta-video">
+                        <img src="img/ourfirshtime.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=d89v7099mZ0">Our First Time</a><br> De <span>Bruno Mars</span> lanzada en 2020.</p>
+                        </div>
+                    </div>
+                    <!--Exito mas-->
+                    <div class="tarjeta-video">
+                        <img src="img/afterglow.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=_NGQfFCFUn4">Afterglow</a> <br>De <span>Ed Sheeran</span> publicada en 2020.</p>
+                        </div>
+                    </div>
+                    <!--Exito mas-->
+                    <div class="tarjeta-video">
+                        <img src="img/pokerface.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=bESGLojNYSo">Poker Face</a><br>De <span>Lady Gaga </span> publicada a finales del 2008. </p>
+                        </div>
+                    </div>
+                    <!--Exito mas-->
+                    <div class="tarjeta-video">
+                        <img src="img/diamons.jpg" alt="">
+                        <div class="inf-video">
+                            <p><a href="https://www.youtube.com/watch?v=8RvAKRoIDqU">Diamonds</a> <br>De <span>Sam Smith</span> publicada en 2020.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separador-inverso"></div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="cont-flex-footer">
+                <div class="informacion">
+                    <h4>Información</h4>
+                    <p>La MUSICA la llevamos todos en la sangre y el ritmo en las ventas. <br>
+                        Si deseas mas contenido sobre el tema puedes pinchar en los siguientes enlaces.<br>
+                        O si tienes algun inconveniente puedes dejarnos un correo.
+                    </p>
+                </div>
+                <div class="contacto">
+                    <div class="redes-sociales">
+                        <a href="#"><img src="img/Iconos/facebook.svg" alt="icono" title="facebook"></a>
+                        <a href="#"><img src="img/Iconos/instagram.svg" alt="icono" title="instagram"></a>
+                        <a href="#"><img src="img/Iconos/twitter.svg" alt="icono" title="twitter"></a>
+                        <a href="#"><img src="img/Iconos/youtube.svg" alt="icono" title="youtube"></a>
+                    </div>
+                    <a href="#" class="correo">poptotheworld@contact.com</a>
+                </div>
+                <div class="cont-etiquetas">
+                    <h4>Etiquetas</h4>
+                    <div class="etiquetas">
+                        <span>Musica</span>
+                        <span>Pop</span>
+                        <span>Rock</span>
+                        <span>Jazz</span>
+                        <span>Metal</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="cont-inf-autor">
+            <h5><b>Autor:</b><span>Juan Ramírez</span> Todos los derechos reservados</h5>
+        </div>
+    <!--Fin del contenedor main-->    
+    </div>
+    <!--Js-->
+    <script src="js/acciones.js"></script>
+</body>
+</html>
