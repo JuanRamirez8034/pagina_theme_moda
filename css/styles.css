@@ -2,11 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 html, body{
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
 }
 #cont-main{
     margin: 98px auto 0 auto;
