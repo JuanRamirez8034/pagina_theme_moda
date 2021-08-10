@@ -4,6 +4,11 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Patua+One&family=STIX+Two+Text:ital@0;1&family=Source+Sans+Pro:wght@300&family=WindSong&display=swap');
+@font-face{
+    font-family: MonteCarlo;
+    src: url(../font/MonteCarlo/MonteCarlo-Regular.ttf);
+}
 html, body{
     margin: 0;
     padding: 0;
@@ -60,6 +65,7 @@ nav ul li a{
     text-align: center;
     margin-left: 5px;
     font-size: 22px;
+    font-family: 'Alfa Slab One', cursive;
 }
 nav ul li a:hover{
     background: rgb(201, 201, 201);
@@ -179,15 +185,15 @@ nav a img{
 }
 .col-row div h3{
     font-size: 24px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Alfa Slab One', cursive, Georgia, 'Times New Roman', Times, serif;
     color: white;
     display: block;
     margin-left: 40px;
 }
 .col-row div p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'STIX Two Text', serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     display: block;
     margin: 40px auto 0px auto;
     width: 90%;
@@ -218,7 +224,7 @@ nav a img{
     color: cornsilk;
     text-shadow: 0px 0px 30px darkblue ;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Alfa Slab One', cursive, Georgia, 'Times New Roman', Times, serif;
 }
 /*contenedor flexible para meter los contedores de imagenes*/
 .cont-flex-imagenes-filas{
@@ -250,6 +256,7 @@ nav a img{
     display: block;
     text-align: center;
     font-size: 20px;
+    font-family: 'STIX Two Text', serif;
     width: 100%;
     height: auto;
     position: absolute;
@@ -326,9 +333,10 @@ footer{
     text-align: center;
     text-decoration: none;
     color: white;
+    font-family: 'Alfa Slab One', cursive;
     display:block;
     width: 190px;
-    margin: 12px auto 0 auto;
+    margin: 12px auto 10px auto;
 }
 .correo:hover{
     color:rgb(253, 165, 0);
@@ -368,7 +376,7 @@ footer{
     margin: 0 auto 20px auto;
     color: white;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: justify;
 }
 .etiquetas{
@@ -380,7 +388,7 @@ footer{
     margin-bottom: 20px;
 }
 .cont-etiquetas h4{
-    margin-top: 20px;
+    margin-top: 0px;
     color: white;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -408,7 +416,9 @@ footer{
 }
 .cont-inf-autor h5 span{
     font-size: 20px;
-    font-style: cursive;
+    color:rgb(151, 157, 172);
+    font-family: MonteCarlo;
+    text-decoration: underline;
 }
 #exitos{
     width: 100%;
@@ -424,7 +434,7 @@ footer{
     color: cornsilk;
     text-shadow: 0px 0px 20px rgb(139, 0, 69) ;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Alfa Slab One', cursive, Georgia, 'Times New Roman', Times, serif;
 }
 .cont-flex-exitos{
     display:flex;
@@ -462,10 +472,11 @@ footer{
     margin-top:40px;
     font-size: 20px;
     color: white;
-    font-family: monospace;
+    font-family:'Patua One', cursive,monospace;
+    
 }
 .tarjeta-video p a{
-    Color: rgb(85, 85, 197);
+    Color: rgb(197, 85, 163);
 }
 .tarjeta-video p span{
     font-weight: bold;
@@ -475,6 +486,9 @@ footer{
     .cont-visualizar-imagen img{
         width: 95%;
         height: auto;
+    }
+    .inf-video p{
+        font-size: 18px;
     }
     nav {
       background:  linear-gradient(to right, rgb(222,222,222), rgb(212, 212, 212));  
