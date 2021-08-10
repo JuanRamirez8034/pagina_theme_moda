@@ -561,4 +561,7 @@ footer{
     .cont-ftb a{
         top:280px;
     }
+    .inf-video p{
+        font-size: 17px;
+    }
 }
